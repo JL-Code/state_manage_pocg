@@ -1,4 +1,4 @@
-# state_manager_poc
+# state_manage_poc
 
 A new Flutter project.
 

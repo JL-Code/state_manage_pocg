@@ -1,4 +1,4 @@
-package com.example.state_manager_poc;
+package com.example.state_manage_poc;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
