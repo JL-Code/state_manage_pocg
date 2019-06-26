@@ -9,24 +9,28 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   //创建顶层状态
   final CounterModel counterModel = CounterModel();
+  final UserModel userModel = UserModel();
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ScopedModel<CounterModel>(
-      model: counterModel,
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
+    return ScopedModel<UserModel>(
+      model: userModel,
+      child: ScopedModel<CounterModel>(
+        model: counterModel,
+        child: MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          routes: {
+            "/": (_) {
+              return HomeScreen();
+            },
+            "/counter": (_) {
+              return CounterApp();
+            },
+          },
         ),
-        routes: {
-          "/": (_) {
-            return HomeScreen();
-          },
-          "/counter": (_) {
-            return CounterApp();
-          },
-        },
       ),
     );
   }
