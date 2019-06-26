@@ -1,0 +1,4 @@
+#Wed Jun 26 23:32:45 CST 2019
+base.0=/Users/codeme/FlutterProjects/state_manager_poc/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
