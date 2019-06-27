@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
+import './scoped_model.dart';
 import 'package:state_manage_poc/home_screen.dart';
 import 'package:state_manage_poc/scoped_model/counter_app.dart';
 import 'package:state_manage_poc/scoped_model/counter_model.dart';
